@@ -7,7 +7,7 @@ This README is intended for beginners in Linear issues and GitHub pull requests.
 1. [How to create a Linear issue.](#create-issue)
 2. [How to edit a Linear issue.](#edit-issue)
 3. [How to write good commit messages.](#commit-message)
-4. [How to link a commit to a Linear issue.](#link-issue-commit-pr)
+4. [How to link a commit to a Linear issue.](#link-commit-pr)
    1. [GitHub Method](#github-method)
    2. [GitHub Desktop](#github-desktop)
    3. [Git Method](#git-method)
@@ -53,8 +53,8 @@ in writing good commit messages: [How to Write Good Commit Messages: A Practical
 
 
 
-<a id="link-issue-commit-pr"></a>
-## How to link a commit and a pull request to a Linear issue
+<a id="link-commit-pr"></a>
+## How to link a commit to a Linear issue
 
 In order to link a commit and a pull request to a Linear issue, the general idea is to copy the branch name from Linear issue and use it as the branch name in GitHub. Then, when a pull request (PR) for that branch is opened, the title of the PR must contain the Linear issue ID.
 
