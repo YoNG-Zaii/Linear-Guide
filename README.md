@@ -1,4 +1,4 @@
-# Introduction to TOP Tech Workflows
+# TOP Tech Workflows
 
 This README is intended for beginners in Linear issues and GitHub pull requests.
 
@@ -10,6 +10,7 @@ This README is intended for beginners in Linear issues and GitHub pull requests.
 4. [How to link a commit to a Linear issue.](#link-issue-commit-pr)
    1. [GitHub Method](#github-method)
    2. [GitHub Desktop](#github-desktop)
+   3. [Git Method](#git-method)
 5. [How to link a pull request to Linear issue.](#link-pr-linear)
 
 
@@ -25,7 +26,7 @@ This README is intended for beginners in Linear issues and GitHub pull requests.
 
 4. Now, key in the necessary information including title, description (if any), set the status, priority, assignee, label, as well as due date.
 
-5. After that, we will save the issue and voila, a Linear issue is created.
+5. After that, save the issue and voila, a Linear issue is created.
 
 <p align='center'>
    <img width='80%' height='auto' src='./Photos/Linear_Created_Issue.png'>
@@ -62,6 +63,8 @@ In order to link a commit and a pull request to a Linear issue, the general idea
 <a id="github-method"></a>
 ### i. GitHub Method
 
+You can use this method if you want to edit the files directly in GitHub repository without going into IDE or code editor.
+
 1. In GitHub, select a file that you want to change. In our example, we will choose src -> App.js file.
 
 2. Edit the file.
@@ -72,7 +75,7 @@ In order to link a commit and a pull request to a Linear issue, the general idea
    <img width='80%' height='auto' src='./Photos/Linear_Copy_Branch_Name.png'>
 </p>
 
-4. <code>Important</code> After we have copied the branch name, select 'Create a new branch...' and key in the copied branch name.
+4. <code>Important</code> After you have copied the branch name, select 'Create a new branch...' and key in the copied branch name.
 
 <p align='center'>
    <img width='80%' height='auto' src='./Photos/GitHub_Branch_Name.png'>
@@ -92,11 +95,18 @@ In order to link a commit and a pull request to a Linear issue, the general idea
 <a id="github-desktop"></a>
 ### ii. GitHub Desktop
 
-1. Clone the repository.
+This is the preferred method for people who do not use Git to commit to GitHub repository. For this method, you need to have [GitHub Desktop](https://desktop.github.com/) and [VS Code](https://code.visualstudio.com/) installed in your computer.
+
+1. Make sure you have cloned the repository.
 
 2. Copy the git branch name from the Linear issue that you want to link to (Refer to [step 3](#copy-branch-name) in GitHub Method).
 
-3. <code>Important</code> After we have copied the branch name, create a new branch using the copied branch name.
+3. <code>Important</code> After you have copied the branch name, create a new branch using the copied branch name.
+
+<p align='center'>
+   <img width='80%' height='auto' src='./Photos/GitHub_Desktop_Branch.png'>
+   <img width='80%' height='auto' src='./Photos/GitHub_Desktop_New_Branch.png'>
+</p>
 
 4. Click 'Open in Visual Studio Code'.
 
@@ -106,12 +116,53 @@ In order to link a commit and a pull request to a Linear issue, the general idea
 
 7. Go back to GitHub Desktop, enter a commit title according to the guide, which is the label followed by the title of the Linear issue. In this case, the label is 'Feature'. So, our commit title will look like this: <code>feat: Change the homepage contents to 'Boujour World'</code>
 
+<p align='center'>
+   <img width='80%' height='auto' src='./Photos/GitHub_Desktop_Commit_Title.png'>
+</p>
+
 8. Click 'commit to {branch name}'. Then, click 'Publish branch'.
+
+<p align='center'>
+   <img width='80%' height='auto' src='./Photos/GitHub_Desktop_Publish.png'>
+</p>
 
 9. Click 'Create Pull Request'.
 
+<p align='center'>
+   <img width='80%' height='auto' src='./Photos/GitHub_Desktop_PR.png'>
+</p>
+
 10. Continue at [How to Link PR to Linear](#link-pr-linear).
 
+
+<a id="git-method"></a>
+### iii. Git Method
+
+This is the preferred method for people who want to use Git to commit to GitHub repository. For this method, you can use any IDE or code editor you like.
+In our example, we will use VS Code.
+
+1. Make sure you have cloned the repository.
+
+2. Copy the git branch name from the Linear issue that you want to link to (Refer to [step 3](#copy-branch-name) in GitHub Method).
+
+3. <code>Important</code> After you have copied the branch name, create a new branch using the copied branch name with the following command: 
+   Example: <code>git branch ti0003ng/tv-14</code>
+   
+4. After the new branch has been created, enter <code>git checkout ti0003ng/tv-14</code> to navigate to the new branch.
+
+5. Edit and save the file in VS Code.
+
+6. Enter <code>git add .</code> to select all files that are modified.
+
+7. Enter <code>git status</code> to check the status of the files to be committed.
+
+8. Enter <code>git commit -m "feat: Change the homepage contents to 'Hello World'"</code>.
+   
+9. Enter <code>git push origin ti0003ng/tv-14</code> to commit to the new branch.
+
+10. Open the new branch created in GitHub repository and create a new pull request.
+
+11. Continue at [How to Link PR to Linear](#link-pr-linear).
 
 
 <a id="link-pr-linear"></a>
