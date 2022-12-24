@@ -166,7 +166,7 @@ In our example, we will use VS Code.
 
 
 <a id="link-pr-linear"></a>
-## How to Link PR to Linear
+## How to link PR to Linear
 
 1. Now, you have arrived on the PR creation page.
 
