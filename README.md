@@ -29,7 +29,7 @@ This README is intended for beginners in Linear issues and GitHub pull requests.
 5. After that, save the issue and voila, a Linear issue is created.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/Linear_Created_Issue.png'>
+      <img width='90%' height='auto' src='./Photos/Linear_Created_Issue.png'>
    </p>
 
 
@@ -39,7 +39,7 @@ This README is intended for beginners in Linear issues and GitHub pull requests.
 1. From the list of issues, select the issue that you want to edit.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/Linear_Issue_List.png'>
+      <img width='90%' height='auto' src='./Photos/Linear_Issue_List.png'>
    </p>
 
 2. You can change the title, add description, change status, priority, assignee, label, as well as due date.
@@ -72,19 +72,19 @@ Given that you have a Linear issue as follows:
 3. Copy the git branch name from the Linear issue that you want to link to. <a id="copy-branch-name"></a>
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/Linear_Copy_Branch_Name.png'>
+      <img width='90%' height='auto' src='./Photos/Linear_Copy_Branch_Name.png'>
    </p>
 
 4. <code>Important</code> After you have copied the branch name, select 'Create a new branch...' and key in the copied branch name.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/GitHub_Branch_Name.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Branch_Name.png'>
    </p>
 
 5. Enter a commit title according to the guide, which is the label followed by the title of the Linear issue. In this case, the label is 'Feature'. So, our commit title will look like this: <code>feat: Change the homepage contents to 'Hello World'</code>
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/GitHub_Commit_Title.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Commit_Title.png'>
    </p>
 
 6. Click 'Propose changes'.
@@ -105,8 +105,8 @@ Given that you have a Linear issue as follows:
 3. <code>Important</code> After you have copied the branch name, create a new branch using the copied branch name.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/GitHub_Desktop_Branch.png'>
-      <img width='80%' height='auto' src='./Photos/GitHub_Desktop_New_Branch.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Desktop_Branch.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Desktop_New_Branch.png'>
    </p>
 
 4. Click 'Open in Visual Studio Code'.
@@ -118,19 +118,19 @@ Given that you have a Linear issue as follows:
 7. Go back to GitHub Desktop, enter a commit title according to the guide, which is the label followed by the title of the Linear issue. In this case, the label is 'Feature'. So, our commit title will look like this: <code>feat: Change the homepage contents to 'Boujour World'</code>
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/GitHub_Desktop_Commit_Title.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Desktop_Commit_Title.png'>
    </p>
 
 8. Click 'commit to {branch name}'. Then, click 'Publish branch'.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/GitHub_Desktop_Publish.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Desktop_Publish.png'>
    </p>
 
 9. Click 'Create Pull Request'.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/GitHub_Desktop_PR.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Desktop_PR.png'>
    </p>
 
 10. Continue at [How to link PR to Linear](#link-pr-linear).
@@ -172,34 +172,49 @@ Given that you have a Linear issue as follows:
 1. Now, you have arrived on the PR creation page.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/GitHub_PR.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_PR.png'>
    </p>
 
 2. <code>Important</code> Enter the issue ID in square brackets right after the PR title. The issue ID can be found in the Linear issue. In this case, the issue ID is <code>TV-14</code>.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/GitHub_PR_Title_IssueID.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_PR_Title_IssueID.png'>
    </p>
 
 3. Click 'Create pull request' and voila, the Linear issue is automatically updated to 'In Progress' and later to 'In Review' status.
 
    <p align='center'>
-      <img width='80%' height='auto' src='./Photos/Linear_In_Progress.png'>
-      <img width='80%' height='auto' src='./Photos/Linear_In_Review.png'>
+      <img width='90%' height='auto' src='./Photos/Linear_In_Progress.png'>
+      <img width='90%' height='auto' src='./Photos/Linear_In_Review.png'>
    </p>
 
 
 ## How to comment, request changes, and approve a pull request <a id="approve-pr-linear"></a>
 
+A pull request will need at least one approval from any reviewer for the commit to be merged. Here, you will learn how to approve a pull request and merge it into the main branch.
+
 1. In the pull request page, click 'Files changed'.
 
 2. Click 'Review changes'. Here, we have three options - Comment, Approve and Request Changes.
 
-3. Select 'Approve'. Now the pull request is ready to be merged into the main branch.
+   <p align='center'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Review_Changes.png'>
+   </p>
+
+3. Select 'Approve' and then 'Submit review'. Now the pull request is ready to be merged into the main branch.
 
 4. Go back to the pull request page, click 'Merge pull request' and then 'Confirm merge'.
 
+   <p align='center'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Merge_PR.png'>
+      <img width='90%' height='auto' src='./Photos/GitHub_Confirm_Merge.png'>
+   </p>
+
 5. The Linear issue is automatically updated to 'Done' status. We have officially completed one Linear issue cycle.
+
+   <p align='center'>
+      <img width='90%' height='auto' src='./Photos/Linear_Done.png'>
+   </p>
 
 
 ## More to be updated...
