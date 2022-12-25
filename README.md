@@ -12,11 +12,11 @@ This README is intended for beginners in Linear issues and GitHub pull requests.
    2. [GitHub Desktop](#github-desktop)
    3. [Git Method](#git-method)
 5. [How to link a pull request to Linear issue.](#link-pr-linear)
+6. [How to comment, request changes, and approve a pull request.](#approve-pr-linear)
 
 
 
-<a id="create-issue"></a>
-## How to create a Linear issue
+## How to create a Linear issue <a id="create-issue"></a>
 
 1. Select your team. In our example, we will select 'Test & Verify' team.
 
@@ -34,8 +34,7 @@ This README is intended for beginners in Linear issues and GitHub pull requests.
 
 
 
-<a id="edit-issue"></a>
-## How to edit a Linear issue
+## How to edit a Linear issue <a id="edit-issue"></a>
 
 1. From the list of issues, select the issue that you want to edit.
 
@@ -47,25 +46,24 @@ This README is intended for beginners in Linear issues and GitHub pull requests.
 
 
 
-<a id="commit-message"></a>
-## How to write good commit messages
+## How to write good commit messages <a id="commit-message"></a>
 
 Every time when we create a new commit, we need to input the commit title/message. In general, we will follow this guide
 in writing good commit messages: [How to Write Good Commit Messages: A Practical Git Guide](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
 
 
 
-<a id="link-commit-pr"></a>
-## How to link a commit to a Linear issue
+## How to link a commit to a Linear issue <a id="link-commit-pr"></a>
 
 In order to link a commit and a pull request to a Linear issue, the general idea is to copy the branch name from Linear issue and use it as the branch name in GitHub. Then, when a pull request (PR) for that branch is opened, the title of the PR must contain the Linear issue ID.
 
 
 
-<a id="github-method"></a>
-### i. GitHub Method
+### i. GitHub Method <a id="github-method"></a>
 
 You can use this method if you want to edit the files directly in GitHub repository without going into IDE or code editor.
+Given that you have a Linear issue as follows:
+> TV-14 Change the hompage contents to 'Hello World'
 
 1. In GitHub, select a file that you want to change. In our example, we will choose src -> App.js file.
 
@@ -94,10 +92,11 @@ You can use this method if you want to edit the files directly in GitHub reposit
 7. Continue at [How to link PR to Linear](#link-pr-linear).
 
 
-<a id="github-desktop"></a>
-### ii. GitHub Desktop
+### ii. GitHub Desktop <a id="github-desktop"></a>
 
 This is the preferred method for people who do not use Git to commit to GitHub repository. For this method, you need to have [GitHub Desktop](https://desktop.github.com/) and [VS Code](https://code.visualstudio.com/) installed in your computer.
+Given that you have a Linear issue as follows:
+> TV-15 Change the hompage contents to 'Bonjour World'
 
 1. Make sure you have cloned the repository.
 
@@ -137,20 +136,21 @@ This is the preferred method for people who do not use Git to commit to GitHub r
 10. Continue at [How to link PR to Linear](#link-pr-linear).
 
 
-<a id="git-method"></a>
-### iii. Git Method
+### iii. Git Method <a id="git-method"></a>
 
 This is the preferred method for people who want to use Git to commit to GitHub repository. For this method, you can use any IDE or code editor you like.
 In our example, we will use VS Code.
+Given that you have a Linear issue as follows:
+> TV-14 Change the hompage contents to 'Hello World'
 
 1. Make sure you have cloned the repository.
 
 2. Copy the git branch name from the Linear issue that you want to link to (Refer to [step 3](#copy-branch-name) in GitHub Method).
 
 3. <code>Important</code> After you have copied the branch name, create a new branch using the copied branch name with the following command: 
-   Example: <code>git branch ti0003ng/tv-14</code>
+   Example: <code>git branch ti0003ng/tv-14</code>.
    
-4. After the new branch has been created, enter <code>git checkout ti0003ng/tv-14</code> to navigate to the new branch.
+4. After the new branch <code>ti0003ng/tv-14</code> has been created, enter <code>git checkout ti0003ng/tv-14</code> to navigate to the new branch.
 
 5. Edit and save the file in VS Code.
 
@@ -158,17 +158,16 @@ In our example, we will use VS Code.
 
 7. Enter <code>git status</code> to check the status of the files to be committed.
 
-8. Enter <code>git commit -m "feat: Change the homepage contents to 'Hello World'"</code>.
+8. Enter <code>git commit -m "feat: Change the homepage contents to 'Hello World'"</code> to commit to the new branch remotely.
    
-9. Enter <code>git push origin ti0003ng/tv-14</code> to commit to the new branch.
+9. Enter <code>git push origin ti0003ng/tv-14</code> to publish the new branch on GitHub repository.
 
-10. Open the new branch created in GitHub repository and create a new pull request.
+10. Go to GitHub, open the new branch created in GitHub repository and create a new pull request.
 
 11. Continue at [How to link PR to Linear](#link-pr-linear).
 
 
-<a id="link-pr-linear"></a>
-## How to link PR to Linear
+## How to link PR to Linear <a id="link-pr-linear"></a>
 
 1. Now, you have arrived on the PR creation page.
 
@@ -190,14 +189,27 @@ In our example, we will use VS Code.
    </p>
 
 
+## How to comment, request changes, and approve a pull request <a id="approve-pr-linear"></a>
+
+1. In the pull request page, click 'Files changed'.
+
+2. Click 'Review changes'. Here, we have three options - Comment, Approve and Request Changes.
+
+3. Select 'Approve'. Now the pull request is ready to be merged into the main branch.
+
+4. Go back to the pull request page, click 'Merge pull request' and then 'Confirm merge'.
+
+5. The Linear issue is automatically updated to 'Done' status. We have officially completed one Linear issue cycle.
+
+
 ## More to be updated...
 
 ## References
 
-Ayodeji, B. (2019, Nov 28). *How to Write Good Commit Messages: A Practical Git Guide*. https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/
+Ayodeji, B. (2019, Nov 28). *How to Write Good Commit Messages: A Practical Git Guide*. [https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/).
 
-Linear. (n.d.). *Create issues*. https://linear.app/docs/creating-issues/.
+Linear. (n.d.). *Create issues*. [https://linear.app/docs/creating-issues](https://linear.app/docs/creating-issues).
 
-Linear. (n.d.). *Edit issues*. https://linear.app/docs/editing-issues.
+Linear. (n.d.). *Edit issues*. [https://linear.app/docs/editing-issues](https://linear.app/docs/editing-issues).
 
-Linear. (n.d.). *GitHub*. https://linear.app/docs/github.
+Linear. (n.d.). *GitHub*. [https://linear.app/docs/github](https://linear.app/docs/github).
