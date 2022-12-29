@@ -8,7 +8,9 @@ This documentation introduces you to the automated workflows between GitHub comm
    2. [GitHub Desktop](#github-desktop).
    3. [Git method](#git-method).
 2. [Linking GitHub pull request to a Linear issue](#link-pr-linear).
-3. [Reviewing a pull request](#review-pr-linear).
+3. [Linking multiple PRs to a Linear issue](#link-multiple-pr).
+4. [Linking a PR to multiple Linear issues](#link-multiple-linear).
+5. [Reviewing a pull request](#review-pr-linear).
 
 
 ## Linking GitHub commit to a Linear issue <a id="link-commit-linear"></a>
@@ -112,9 +114,9 @@ Given that you have a Linear issue as follows:
 
 5. Edit and save the file in VS Code.
 
-6. Enter <code>git add .</code> to select all files that are modified.
+6. Enter <code>git status</code> to check the status of the files to be committed.
 
-7. Enter <code>git status</code> to check the status of the files to be committed.
+7. Enter <code>git add .</code> to select all files that are modified.
 
 8. Enter <code>git commit -m "feat: Change the homepage contents to 'Hello World'"</code> to commit to the new branch remotely.
    
@@ -145,6 +147,56 @@ Given that you have a Linear issue as follows:
       <img width='90%' height='auto' src='../photos/Linear_In_Progress.png'>
       <img width='90%' height='auto' src='../photos/Linear_In_Review.png'>
    </p>
+
+
+
+## Linking multiple PRs to a Linear issue <a id="link-multiple-pr"></a>
+
+The idea is similar to [Linking GitHub commit to a Linear issue](#link-commit-linear) followed by [Linking GitHub pull request to a Linear issue](#link-pr-linear). Hence, you are advised to read the two sections before proceeding.
+Given that you have a new Linear issue as follows:
+> TV-17 Make the title more prominent
+
+1. Assume you have a branch called <code>ti0003ng/tv-17</code>. You have also created a pull request for this branch and linked it to the Linear issue: <code>TV-17</code>.
+
+   <p align='center'>
+      <img width='90%' height='auto' src='../photos/Linear_Multiple_PR_1.png'>
+   </p>
+
+2. Now, create a new branch such as <code>ti0003ng/tv-17-2</code>. With this new branch, create a new pull request and link it to the Linear issue.
+
+   <p align='center'>
+      <img width='90%' height='auto' src='../photos/GitHub_PR_2_Issue_1.png'>
+   </p>
+
+3. Linear will automatically detect the 2nd PR and link it to <code>TV-17</code>.
+
+   <p align='center'>
+      <img width='90%' height='auto' src='../photos/Linear_Multiple_PR_2.png'>
+   </p>
+
+
+## Linking a PR to multiple Linear issues <a id="link-multiple-linear"></a>
+
+The idea is similar to [Linking GitHub commit to a Linear issue](#link-commit-linear) followed by [Linking GitHub pull request to a Linear issue](#link-pr-linear). Hence, you are advised to read the two sections before proceeding.
+Given that you have two new Linear issue as follows:
+> TV-18 Change the font size
+
+> TV-19 Change the font type
+
+1. Now, create a new branch such as <code>ti0003ng/tv-18</code> or <code>ti0003ng/tv-19</code> or even better, <code>style/change-font-style</code>.
+
+   <p align='center'>
+      <img width='90%' height='auto' src='../photos/GitHub_Commit_Issue_2.png'>
+   </p>
+
+2. With this new branch, create a new pull request. <code>Important</code> Enter the different issue IDs in separate square brackets right after the PR title. In this case, the PR title should look like this: style: Change font styles [TV-18] [TV-19].
+
+   <p align='center'>
+      <img width='90%' height='auto' src='../photos/GitHub_PR_Issue_2.png'>
+   </p>
+   
+3. Linear will automatically detect and link one PR to both issues.
+
 
 
 ## Reviewing a PR <a id="review-pr-linear"></a>
