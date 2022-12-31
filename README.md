@@ -1,4 +1,4 @@
-# TOP Tech Workflows
+# Software Project Management Workflows
 
 This README is intended for beginners in Linear issues and GitHub pull requests.
 
