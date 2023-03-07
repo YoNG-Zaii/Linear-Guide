@@ -9,8 +9,15 @@ This documentation contains the common good GitHub practices.
 
 ## Writing a good commit message <a id="commit-message"></a>
 
-Every time when we create a new commit, we need to input the commit title/message. In general, we will follow this guide
-in writing good commit messages: [How to Write Good Commit Messages: A Practical Git Guide](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
+Every time when we create a new commit, we need to input the commit title/message. Here is the list of conventional commit messages type:
+- feat: Adding a new feature
+- fix: Fixing code/bug
+- improvement: Improving or updating a section of the code
+- refactor: Refactoring a section of the code
+- style: Changes to styling of the website
+- chore: Code maintenance/miscellaneous tasks
+- test: Testing purpose
+- docs: Documentation
 
 
 
